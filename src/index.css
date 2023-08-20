@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cart-item{
+  display: inline-flex;/*this is causing the line by line block of left and right block*/
+  margin: 20px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-top-right-radius: 1.5vw;
+  border-bottom-right-radius: 1.5vw;
+  padding: 1vw;
+}
+.cart-item .right-block{
+  padding : 0 20px;
+}
+.cart-item-actions{
+  margin-top: 20px;
+}
+.action-icons{
+  height : 25px;
+  width:25px;
+  margin-right: 10px;
+}
+.action-icons:hover{
+  height: 26px;
+  width: 26px;
+  cursor: pointer;
+}
+
+.cart{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.total{
+  background: rgb(99, 99, 212);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: larger;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0px;
+
+}
+
+.nav-bar{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.addProductBtn{
+  padding: 10px;
+  margin: auto;
+  margin-top: 2vh;
+  border-radius: 0.5vw;
+  background: rgb(139, 139, 255);
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  width: 30vh;
+  font-size: larger;
+}
+
+.addProductBtn:hover{
+  cursor: pointer;
+  background-color: white;
+  color: rgb(139, 139, 255);
+  width: 32vh;
+}
+
+.newProductForm{
+  position: fixed;
+  right: 2vw; 
+  bottom: 9vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 25vw;
+  margin: auto;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1.5vw;
+}
+
+.newProductForm input{
+  margin-left: 5px;
+  padding: 10px;
+  border-radius: 0.5vw;
+  border: 1px solid black;
+}
+
+.newProductForm h4{
+  margin-left: 15px;
+}
+
+.newProductForm h2{
+  margin: auto;
+  color: rgb(63, 99, 144);
+}
+
+.mainScreen{
+  display: flex;
+  flex-direction: row;
+}
+input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+               -webkit-appearance: none;
+                margin: 0;
+        }
+
+
